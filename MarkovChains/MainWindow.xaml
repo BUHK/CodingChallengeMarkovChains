@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:TravelingSalesPerson"
         mc:Ignorable="d"
         Title="Traveling Salesperson Demo" Height="500" Width="800" ContentRendered="Window_ContentRendered">
+    
     <StackPanel>
         <Grid>
             <Grid.ColumnDefinitions>
