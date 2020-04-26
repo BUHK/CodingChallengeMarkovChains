@@ -7,6 +7,7 @@ using System.Windows.Markup;
 using System.Windows.Shapes;
 using System.Windows.Controls;
 using System.Windows.Media;
+using MarkovChains;
 
 namespace TravelingSalesPerson
 {
@@ -15,12 +16,16 @@ namespace TravelingSalesPerson
     /// </summary>
     public partial class MainWindow : Window
     {
-
+        TextBoxOutputter outputter;
 
         public MainWindow()
         {
             InitializeComponent();
             Trace.WriteLine("helloooooooooooooooooooooooo world!");
+
+            outputter = new TextBoxOutputter(OutConsole);
+            Console.SetOut(outputter);
+            Console.WriteLine("ello world");
         }
 
         /// <summary>

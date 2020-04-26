@@ -32,7 +32,7 @@
         </Grid>
 
 
-        <Grid>
+        <!--<Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
@@ -44,7 +44,7 @@
             <Button x:Name="LexicographicButton" Click="LexicographicButton_Click" Content="Lexicographic Route" Grid.Column="1"/>
             <Button x:Name="GeneticSelectButton" Click="GeneticSelectButton_Click" Content="Genetic Route" Grid.Column="2" />
             <Button x:Name="GeneticCrossoverButton" Click="GeneticCrossoverButton_Click" Content="Genetic Crossover" Grid.Column="3" />
-        </Grid>
+        </Grid>-->
 
         <Grid>
             <Grid.ColumnDefinitions>
@@ -56,6 +56,9 @@
 
             <TextBlock x:Name="RecordDistance" Grid.Column="0"/>
             <TextBlock x:Name="IterationCount" Grid.Column="1"/>
+        </Grid>
+        <Grid>
+            <TextBox x:Name="OutConsole" />
         </Grid>
     </StackPanel>
 </Window>
