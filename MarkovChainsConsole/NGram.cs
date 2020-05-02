@@ -10,15 +10,25 @@ namespace MarkovChainsConsole
         public string ThisGram { get; set; }
         private List<string> PostGrams { get; set; }
 
-        public NGram (string str)
+        public int PostGramLength { get; private set; }
+
+        public NGram(string str)
         {
             ThisGram = str;
             PostGrams = new List<string>();
         }
 
+        public string GetRandomPostGram()
+        {
+            Random ran = new Random();
+            int index = ran.Next(PostGrams.Count);
+            return PostGrams[index];
+        }
+
         public void AddPostGram(string str)
         {
             PostGrams.Add(str);
+            PostGramLength++;
         }
 
         public override string ToString()
